@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">Dark</button>
+      <input id="searchbar" onkeyup="search()" type="text"
+        name="search" placeholder="Search...">
+      <div class="form-container">
+        <input id="content" type="text" />
+        <button class="btn ml-1" onclick="addNewItem()">Add</button>
+      </div>
+      <ul id="list" class="list-container">
+        <div class="todo-wrapper">
+          <li id="item-1" class="todo-item">Study JavaScript</li>
+          <button class="edit" style="z-index: 90;">Edit</button>
+          <button>Delete</button>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>
